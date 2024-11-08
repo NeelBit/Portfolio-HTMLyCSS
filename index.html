@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Mi portfolio hecho con HTML, CSS para el Informatorio 2024">
+    <title>Mi portfolio Informatorio 2024 - Hecho con HTML y CSS</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <h1 class="title"><a href="index.html">Mi portfolio</a></h1>
+        <h2 class="subtitle">Informatorio 2024 - Portfolio hecho con HTML y CSS</h2>
+        <nav class="nav contenedor">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#sobre-mi">Sobre mi</a></li>
+                <li class="nav__item"><a href="#proyectos">Proyectos</a></li>
+                <li class="nav__item"><a href="#conocimientos">Conocimientos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main contenedor sobre-mi" id="sobre-mi">
+        <h2 class="main__title title-section">Soy desarrollador front-end con Vue</h2>
+        <div class="main__content">
+            <div class="main__text">
+                <p>Me gusta estar siempre aprendiendo, actualmente estoy cursando el informatorio.</p>
+                <p>Quiero tener un enfoque aplicado siempre a mejorar la experiencia de usuario.</p>
+                <p>Me considero un apasionado por la tecnología y como hobby me gusta estar informado de todo lo que tenga que ver con la seguridad informática.</p>
+            </div>
+            <img class="main__avatar" src="./assets/images/avatar.svg" alt="avatar">
+        </div>
+    </main>
+
+    <!-- PROYECTOS  -->
+    <section class="section contenedor proyectos" id="proyectos">
+        <h2 class="title-section">Proyectos y prácticas</h2>
+        <div class="proyectos__contenido contenedor">
+            <article class="proyecto__item">
+                <h3 class="proyecto__title">Calcula Días</h3>
+                <p class="proyecto__description">App web y PWA hecha con Vue 3, para calcular días transcurridos y fechas, además, otras funcionalidades.</p>
+                <img class="proyecto__img" src="./assets/images/proyectos/calcula-dias.png" alt="captura de pantalla del proyecto de calcula dias">
+                <div class="proyecto__buttons">
+                    <a class="proyecto__enlace" href="https://github.com/NeelBit/calcula-dias" target="_blank" rel="noopener noreferrer">
+                        <img class="proyecto__icon" src="./assets/icons/github.svg" alt="github de proyecto calcula días">
+                        GitHub
+                    </a>
+                    <a class="proyecto__enlace" href="https://calcula-dias.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        <img class="proyecto__icon" src="./assets/icons/code-deploy.svg" alt="demo desplegada de proyecto 1">
+                        demo
+                    </a>
+                </div>
+            </article>
+
+            <article class="proyecto__item">
+                <h3 class="proyecto__title">Propuesta RadioFusionCable</h3>
+                <p class="proyecto__description">Versión propia del sitio radiofusioncable.com.ar - HTML5, CSS3, y JS puro. Sitio web simple de una pagina, adaptable a dispositivos móviles (responsive design). Utilicé los recursos (imágenes, contenido texto, colores) del sitio original.</p>
+                <img class="proyecto__img" src="./assets/images/proyectos/radiofusioncable.gif" alt="gif animado de la propuesta de mejora del sitio de radiofusioncable">
+                <div class="proyecto__buttons">
+                    <a class="proyecto__enlace" href="https://github.com/NeelBit/RadioFusionCable_propuesta" target="_blank" rel="noopener noreferrer">
+                        <img class="proyecto__icon" src="./assets/icons/github.svg" alt="github de proyecto radiofusioncable">
+                        GitHub
+                    </a>
+                    <a class="proyecto__enlace" href="https://neelbit.github.io/RadioFusionCable_propuesta/" target="_blank" rel="noopener noreferrer">
+                        <img class="proyecto__icon" src="./assets/icons/code-deploy.svg" alt="demo desplegada de proyecto radiofusioncable">
+                        demo
+                    </a>
+                </div>
+            </article>
+
+            <article class="proyecto__item">
+                <h3 class="proyecto__title">A lo artesanal</h3>
+                <p class="proyecto__description">Sitio simple HTML5, CSS3, JS. Landing page de mini emprendimiento de hiloramas. Web responsive y adaptable, con varias secciones y galería de imágenes</p>
+                <img class="proyecto__img" src="./assets/images/proyectos/a-lo-artesanal.webp" alt="captura de pantalla de proyecto a lo artesanal">
+                <div class="proyecto__buttons">
+                    <a class="proyecto__enlace" href="https://github.com/NeelBit/a_lo_artesanal" target="_blank" rel="noopener noreferrer">
+                        <img class="proyecto__icon" src="./assets/icons/github.svg" alt="github de proyecto A lo artesanal">
+                        GitHub
+                    </a>
+                    <a class="proyecto__enlace" href="https://aloartesanal.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        <img class="proyecto__icon" src="./assets/icons/code-deploy.svg" alt="demo desplegada de proyecto a lo artesanal">
+                        demo
+                    </a>
+                </div>
+            </article>
+
+            <article class="proyecto__item">
+                <h3 class="proyecto__title">Propuesta Despertares</h3>
+                <p class="proyecto__description">Versión propia del sitio despertaressrl (<a href="https://web.archive.org/web/20220525113808/https://despertaressrl.com/" target="_blank" rel="noopener noreferrer">así se veía</a>) - HTML5, CSS3, y JS puro. Sitio web simple de una pagina adaptable a dispositivos móviles (responsive design). Utilice los recursos (imágenes, contenido texto, colores) del sitio original. Incluye mapa, RRSS y animaciones.</p>
+                <img class="proyecto__img" src="./assets/images/proyectos/despertares.webp" alt="captura de pantalla de la propuesta de mejora del sitio de despertares">
+                <div class="proyecto__buttons">
+                    <a class="proyecto__enlace" href="https://github.com/NeelBit/despertares_propuesta" target="_blank" rel="noopener noreferrer">
+                        <img class="proyecto__icon" src="./assets/icons/github.svg" alt="github de proyecto propuesta de mejora del sitio de Despertares">
+                        GitHub
+                    </a>
+                    <a class="proyecto__enlace" href="https://neelbit.github.io/despertares_propuesta/" target="_blank" rel="noopener noreferrer">
+                        <img class="proyecto__icon" src="./assets/icons/code-deploy.svg" alt="demo desplegada de proyecto de propuesta del sitio de despertares srl">
+                        demo
+                    </a>
+                </div>
+            </article>
+
+            <article class="proyecto__item">
+                <h3 class="proyecto__title">Blog estático ficticio de Café</h3>
+                <p class="proyecto__description">Práctica de un sitio web sobre café. HTML y CSS. Página web responsive y estática.</p>
+                <img class="proyecto__img" src="./assets/images/proyectos/blog-cafe.webp" alt="Captura de pantalla del blog estático ficticio de Café">
+                <div class="proyecto__buttons">
+                    <a class="proyecto__enlace" href="https://github.com/NeelBit/blog_cafe" target="_blank" rel="noopener noreferrer">
+                        <img class="proyecto__icon" src="./assets/icons/github.svg" alt="github de proyecto de práctica del blog estático y ficticio de café">
+                        GitHub
+                    </a>
+                    <a class="proyecto__enlace" href="https://blog-cafe-neel.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        <img class="proyecto__icon" src="./assets/icons/code-deploy.svg" alt="demo desplegada de proyecto blog de cafe ficticio">
+                        demo
+                    </a>
+                </div>
+            </article>
+
+            <article class="proyecto__item">
+                <h3 class="proyecto__title">Festival de música ficticio</h3>
+                <p class="proyecto__description">Proyecto realizado con HTML5, CSS3 y JavaScript + Sass. Sitio sobre un festival de música ficticio, formato landing page simple, sitio web responsive.</p>
+                <img class="proyecto__img" src="./assets/images/proyectos/festival-musica.webp" alt="Captura de pantalla de sitio de proyecto ficticio de festival de música">
+                <div class="proyecto__buttons">
+                    <a class="proyecto__enlace" href="https://github.com/NeelBit/festival_musica" target="_blank" rel="noopener noreferrer">
+                        <img class="proyecto__icon" src="./assets/icons/github.svg" alt="github de proyecto de sitio ficticio de festival de música">
+                        GitHub
+                    </a>
+                    <a class="proyecto__enlace" href="https://festival-musica-21.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        <img class="proyecto__icon" src="./assets/icons/code-deploy.svg" alt="demo desplegada de proyecto de festival de música ficticio">
+                        demo
+                    </a>
+                </div>
+            </article>
+
+            <article class="proyecto__item">
+                <h3 class="proyecto__title">Práctica: Galería de imágenes + mapa</h3>
+                <p class="proyecto__description">Simple sitio responsive con HTML, CSS y JS. Galería de imágenes estáticas, mapa con la opción de ir a ubicación.
+                    Galería con muuri, mapa con leafletjs, y el icono con efecto DarkMode con css puro. Sólo es una práctica de varias tareas en uno solo.</p>
+                <img class="proyecto__img" src="./assets/images/proyectos/galeria-mapa.webp" alt="captura de sitio de practica de varias tecnologías">
+                <div class="proyecto__buttons">
+                    <a class="proyecto__enlace" href="https://github.com/NeelBit/galeria_mapa_darkmodeIconEffect" target="_blank" rel="noopener noreferrer">
+                        <img class="proyecto__icon" src="./assets/icons/github.svg" alt="github de proyecto con prácticas varias">
+                        GitHub
+                    </a>
+                    <a class="proyecto__enlace" href="https://galeria-mapa-darkmodeicon.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        <img class="proyecto__icon" src="./assets/icons/code-deploy.svg" alt="demo desplegada de proyecto de prácticas de varias tecnologías">
+                        demo
+                    </a>
+                </div>
+            </article>
+
+            <article class="proyecto__item">
+                <h3 class="proyecto__title">Mi portfolio</h3>
+                <p class="proyecto__description">Portfolio personal hecho con Angular + CSS puro. Cuenta con varias secciones y animaciones variadas.</p>
+                <img class="proyecto__img" src="./assets/images/proyectos/portfolio.png" alt="captura de pantalla de la vista general de portfolio">
+                <div class="proyecto__buttons">
+                    <a class="proyecto__enlace" href="https://github.com/NeelBit/Portfolio" target="_blank" rel="noopener noreferrer">
+                        <img class="proyecto__icon" src="./assets/icons/github.svg" alt="github de portfolio personal">
+                        GitHub
+                    </a>
+                    <a class="proyecto__enlace" href="https://portfolio-neelbit.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        <img class="proyecto__icon" src="./assets/icons/code-deploy.svg" alt="portfolio personal desplegado">
+                        demo
+                    </a>
+                </div>
+            </article>
+
+        </div>
+        <div class="proyectos__info">Si quieres ver mas proyectos y prácticas realizadas puedes verlos <a href="https://github.com/NeelBit" rel="noopener" target="_blank">en mi perfil de GitHub</a></div>
+    </section>
+
+    <section class="section contenedor conocimientos" id="conocimientos">
+        <h2 class="title-section">Conocimientos</h2>
+
+        <div class="tecnologias">
+            <ul class="tecnologias__list">
+                <li class="tecnologias__item"><a href="https://www.w3.org/html/" target="_blank" rel="noopener"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40" /> </a> </li>
+                <li class="tecnologias__item"><a href="https://www.w3schools.com/css/" target="_blank" rel="noopener"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40" /> </a> </li>
+                <li class="tecnologias__item"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40" /> </a> </li>
+                <li class="tecnologias__item"><a href="https://vuejs.org/" target="_blank" rel="noopener"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="40" height="40" /> </a> </li>
+                <li class="tecnologias__item"><a href="https://getbootstrap.com" target="_blank" rel="noopener"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40" /> </a> </li>
+                <li class="tecnologias__item"><a href="https://materializecss.com/" target="_blank" rel="noopener"> <img src="https://raw.githubusercontent.com/prplx/svg-logos/5585531d45d294869c4eaab4d7cf2e9c167710a9/svg/materialize.svg" alt="materialize" width="40" height="40" /> </a> </li>
+                <li class="tecnologias__item"><a href="https://www.python.org" target="_blank" rel="noopener"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40" /> </a> </li>
+                <li class="tecnologias__item"><a href="https://www.djangoproject.com/" target="_blank" rel="noopener"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40" /> </a> </li>
+                <li class="tecnologias__item"><a href="https://git-scm.com/" target="_blank" rel="noopener"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40" /> </a> </li>
+                <li class="tecnologias__item"><a href="https://www.linux.org/" target="_blank" rel="noopener"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40" /> </a> </li>
+                <li class="tecnologias__item"><a href="https://firebase.google.com/" target="_blank" rel="noopener"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40" /> </a> </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+        <ul class="footer__rrss">
+            <li class="footer__item" title="GitHub">
+                <a href="https://github.com/NeelBit" rel="noopener" target=" _blank">
+                    <img class="footer__icon" src="./assets/icons/github.svg" alt="github">
+                </a>
+            </li>
+            <li class="footer__item" title="Twitter / X">
+                <a href="https://x.com/NeelBit" rel="noopener" target=" _blank">
+                    <img class="footer__icon" src="./assets/icons/x_.svg" alt="x twitter">
+                </a>
+            </li>
+        </ul>
+
+        <p class="footer__info">Proyecto de portfolio hecho con HTML y CSS para el Informatorio 2024.</p>
+    </footer>
+
+</body>
+
+</html>
